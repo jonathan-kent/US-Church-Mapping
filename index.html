@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Christian Denominations in the US</title>
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+      }
+
+      .esri-component.esri-legend.esri-widget.esri-widget--panel {
+        width: 150px;
+        height: 300px;
+      }
+
+      #applicationDiv {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      }
+
+      #viewDiv {
+        width: 100%;
+        height: 100%;
+        flex: 1 1 auto;
+        order: 1;
+      }
+
+      #titleDiv {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.2019rem;
+        padding: 10px;
+      }
+
+      #layerToggle {
+        width: 180px;
+        top: 20px;
+        right: 20px;
+        position: absolute;
+        z-index: 99;
+        background-color: white;
+        border-radius: 8px;
+        padding: 10px;
+        opacity: 0.75;
+      }
+
+    </style>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.16/esri/themes/light/main.css">
+    <script src="https://js.arcgis.com/4.16/"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div id="applicationDiv">
+      <div id="viewDiv">
+        <div id="titleDiv" class="esri-widget">Christian Denominations in the US</div>
+      </div>
+      <span id="layerToggle" class="esri-widget">
+        <div>
+          <input type="checkbox" checked id="protestantLayer" /> Protestant
+        </div>
+        <div>
+          <input type="checkbox" checked id="baptistLayer" /> Baptist
+        </div>
+        <div>
+          <input type="checkbox" checked id="pentecostalLayer" /> Pentecostal
+        </div>
+        <div>
+          <input type="checkbox" checked id="methodistLayer" /> Methodist
+        </div>
+        <div>
+          <input type="checkbox" checked id="catholicLayer" /> Catholic
+        </div>
+        <div>
+          <input type="checkbox" checked id="lutheranLayer" /> Lutheran
+        </div>
+        <div>
+          <input type="checkbox" checked id="presbyterianLayer" /> Presbyterian
+        </div>
+          <input type="checkbox" checked id="episcopalLayer" /> Episcopal
+        <div>
+          <input type="checkbox" checked id="adventistLayer" /> Adventist
+        </div>
+        <div>
+          <input type="checkbox" checked id="orthodoxLayer" /> Orthodox
+        </div>
+        <div>
+          <input type="checkbox" checked id="reformedLayer" /> Reformed
+        </div>
+        <div>
+          <input type="checkbox" checked id="mennoniteLayer" /> Mennonite
+        </div>
+        <div>
+          <input type="checkbox" checked id="quakerLayer" /> Quaker
+        </div>
+        <div>
+          <input type="checkbox" checked id="messianicLayer" /> Messianic Judaism
+        </div>
+        <div>
+          <input type="checkbox" checked id="calvinistLayer" /> Calvinist
+        </div>
+      </span>
+    </div>
+  </body>
+</html>
